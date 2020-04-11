@@ -49,7 +49,7 @@ func main() {
 
 		req := &pb.AddRequest{A: a, B: b}
 		if resp, err := addClient.Compute(ctx, req); err == nil {
-			msg := fmt.Sprintf("SummationFFFFFFF %d", resp.Result)
+			msg := fmt.Sprintf("SUCCESS PRIKIN!!! %d", resp.Result)
 			json.NewEncoder(w).Encode(msg)
 		} else {
 			msg := fmt.Sprintf("Internal server error: %s", err.Error())
