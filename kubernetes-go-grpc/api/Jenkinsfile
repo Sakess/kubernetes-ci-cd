@@ -22,7 +22,7 @@ stage "Push"
     sh "docker push ${imageName}"
 
 stage "Deploy"
-kubernetesDeploy configs: "kubernetes-go-grpc/api}/*.yaml", kubeconfigId: 'kenzan_kubeconfig'
+kubernetesDeploy configs: "kubernetes-go-grpc/api/*.yaml", kubeconfigId: 'kenzan_kubeconfig'
 }
     
 
