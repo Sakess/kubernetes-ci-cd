@@ -60,15 +60,18 @@ spec:
   type: NodePort
 ---
 
-apiVersion: extensions/v1beta1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: registry
+  name: registry-deployment
   labels:
     app: registry
 spec:
   strategy:
     type: Recreate
+  selector:
+    matchLabels:
+      app: registry
   template:
     metadata:
       labels:
