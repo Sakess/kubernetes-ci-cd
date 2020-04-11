@@ -13,7 +13,7 @@ node {
 
 stage "Cleanup"
 sh "kubectl delete service ${appName}"
-sh "kubectl delete deployment ${appName}"
+sh "kubectl delete deployment api-deployment"
 
 stage "Build"
 sh "docker build -t ${imageName} -f kubernetes-go-grpc/api/Dockerfile kubernetes-go-grpc/api"
