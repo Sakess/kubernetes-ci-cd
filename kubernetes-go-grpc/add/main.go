@@ -10,15 +10,6 @@ import (
 	"net"
 )
 
-/**
- * :=  created by:  Shuza
- * :=  create date:  29-Jan-2019
- * :=  (C) CopyRight Shuza
- * :=  www.shuza.ninja
- * :=  shuza.sa@gmail.com
- * :=  Fun  :  Coffee  :  Code
- **/
-
 type server struct{}
 
 func main() {

@@ -12,15 +12,6 @@ import (
 	"time"
 )
 
-/**
- * :=  created by:  Shuza
- * :=  create date:  29-Jan-2019
- * :=  (C) CopyRight Shuza
- * :=  www.shuza.ninja
- * :=  shuza.sa@gmail.com
- * :=  Fun  :  Coffee  :  Code
- **/
-
 func main() {
 	//	Connect to Add service
 	conn, err := grpc.Dial("add-service:3000", grpc.WithInsecure())
